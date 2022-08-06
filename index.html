@@ -30,35 +30,40 @@
   <body>
     <nav>
       <div class="container">
+        <img class = "hamburger"  id="ham" onclick="revealMenu()" src="images/menu.svg" alt="">
         <div class="app-icon">
           <img src="images/cropped_app_icon.png" alt="" />
           <h3>SQLite<span class="maintainer-span">Maintainer</span></h3>
         </div>
 
-        <div class="links">
+        <div class="links" id="linksm">
          <ul>
           <li>
-            <div>
+            <div id ="first-link">
               <span class="material-symbols-outlined">
                 database
                 </span>
               <a href="https://www.sqlitetutorial.net/" target="_blank">SQlite Tutorial</a>
+              <img class= "menu-class" id="menu" onclick="closeMenu()"  src="images/close.svg" alt="">
             </div>
           </li>
           <li>
-            <div>
+            <div id ="second-link">
               <span class="material-symbols-outlined"> code </span>
               <a href="https://github.com/golebu2020/SQLiteWorkBench-for-SQLite-Database"  target="_blank">GitHub</a>
            </div>
           </li>
           <li class="btnDown">
-            <div>
+            <div id ="third-link">
               <span class="material-symbols-outlined"> download </span>
               <a href="https://firebasestorage.googleapis.com/v0/b/sqlitemaintainer.appspot.com/o/SQliteMaintainer.exe?alt=media&token=f68d7296-9cc3-4382-92fe-6e97b8adc02f"  target="_blank">Download for Free</a>
             </div>
           </li>
-        </ul>      
+        </ul>       
+       
       </div>
+      </div>
+      
     </nav>
     <section>
       <div class="container">

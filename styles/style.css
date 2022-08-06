@@ -20,6 +20,7 @@
 }
 
 body {
+  position: relative;
   background-color: white;
   font-family: "Overpass", Courier, monospace;
 }
@@ -207,6 +208,91 @@ nav .container .links ul li div a,
   font-family: "Ubuntu", Courier, monospace;
 }
 
-.play-icon {
-  opacity: 0.8;
+.menu-class {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+.links {
+  display: block;
+}
+
+@media only screen and (min-width: 1060px) {
+  .hamburger {
+    display: none;
+  }
+
+  .links {
+    display: block;
+  }
+  .menu-class {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  section .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  .download-windows {
+    margin: 0 auto;
+  }
+
+  .links {
+    /* //display: none; */
+    margin-top: -20px;
+    position: absolute;
+    background-color: rgb(185, 183, 183);
+    align-self: flex-start;
+
+    right: 0;
+  }
+  .links {
+    width: 300px;
+    height: 100%;
+    z-index: 3;
+  }
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .links ul li {
+    align-self: flex-start;
+  }
+  .links ul li div a {
+    margin: 0;
+    padding: 0;
+  }
+  .links ul li {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  nav .container {
+    align-items: flex-start;
+  }
+
+  .links ul li {
+    align-items: center;
+  }
+  .btnDown {
+    width: 80%;
+  }
+  .menu-class {
+    margin-left: 50px;
+  }
+  .menu-class {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .links {
+    display: none;
+  }
 }

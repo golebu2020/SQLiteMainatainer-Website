@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;1,300&family=Ubuntu&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Color Definition */
+  --dark-purple: #332b33;
+  --light-purple: #4e2d4e;
+  --lighter-purple: #772377;
+  --dark-orange: #a2734e;
+  --lighter-orange: #f19f48;
+  --lemon-green: #23e727;
+  --slightly-dark-green: #00c03f;
+  --dark-green: #0a9155;
+  --grayish-white: #dfdfdf;
+  --blue: #2387ff;
+  --white: #e6e6e6;
+}
+
+body {
+  background-color: white;
+  font-family: "Overpass", Courier, monospace;
+}
+
+nav .container {
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+nav .container h3 {
+  font-size: 37px;
+  color: var(--lighter-orange);
+  font-family: "Ubuntu", Courier, monospace;
+}
+
+nav .container .links ul li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+nav .container .links ul li:nth-last-of-type(1) {
+  background-color: var(--lighter-orange);
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: var(--dark-purple);
+  font-weight: bold;
+}
+.app-icon {
+  display: flex;
+  align-items: center;
+}
+.maintainer-span {
+  color: var(--light-purple);
+}
+section .container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 50px;
+}
+
+section .container .about {
+  margin-left: 20px;
+}
+
+section .container .image video {
+  /* background-color: white; */
+  border-radius: 5px;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.3);
+}
+section .container .image video {
+  max-width: 100%;
+  height: auto;
+}
+
+section .container .about h1 {
+  text-align: left;
+  color: var(--dark-purple);
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+section .container .about h3 {
+  margin-bottom: 14px;
+  color: var(--dark-green);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section .container .about ul {
+  font-size: 10px;
+  line-height: 2;
+  color: var(--light-purple);
+  list-style-type: none;
+  font-weight: bold;
+  align-items: center;
+}
+section .container .about ul li {
+  text-align: start;
+  font-size: 15px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+section .container .about ul li img {
+  background-color: var(--dark-purple);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.about ul img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  align-items: center;
+}
+nav .container .links ul li a {
+  text-decoration: none;
+  color: var(--dark-purple);
+  align-items: center;
+}
+nav .container .links ul li {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  padding-top: 5px;
+}
+
+.player {
+  position: relative;
+}
+
+.play-button {
+  /* background-color: var(--dark-green); */
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  /* border-radius: 50%; */
+  /* /* display: none; */
+}
+
+.play-icon {
+  background-color: var(--lighter-orange);
+  border-radius: 50%;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+nav .container ul {
+  display: flex;
+  margin: auto 0;
+  list-style-type: none;
+  align-items: center;
+}
+
+.links ul li div,
+.download-windows {
+  display: flex;
+  align-items: center;
+}
+
+nav .container .links ul li div a,
+.download-windows a {
+  text-decoration: none;
+  color: var(--dark-purple);
+  font-weight: bold;
+}
+
+.btnDown div,
+.download-windows {
+  background-color: var(--lighter-orange);
+  padding: 1px 2px;
+  border-radius: 10px;
+}
+
+.download-windows {
+  padding: 10px 15px;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 230px;
+}
+.download-windows a {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Ubuntu", Courier, monospace;
+}
+
+.play-icon {
+  opacity: 0.8;
+}

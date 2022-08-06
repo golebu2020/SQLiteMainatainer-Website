@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#player-env").mouseleave(function(){         
+          $("#play-video-icon").fadeOut(1000);
+          // $("#play-video-icon").stop();
+        });
+        
+        $("#player-env").mouseenter(function(){     
+          $("#play-video-icon").fadeIn(1000);      
+          // $("#play-video-icon").stop();    
+        });
+      });
+      </script>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>SQLiteMaintainer</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="app-icon">
+          <img src="images/cropped_app_icon.png" alt="" />
+          <h3>SQLite<span class="maintainer-span">Maintainer</span></h3>
+        </div>
+
+        <div class="links">
+         <ul>
+          <li>
+            <div>
+              <span class="material-symbols-outlined">
+                database
+                </span>
+              <a href="https://www.sqlitetutorial.net/" target="_blank">SQlite Tutorial</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span class="material-symbols-outlined"> code </span>
+              <a href="https://github.com/golebu2020/SQLiteWorkBench-for-SQLite-Database"  target="_blank">GitHub</a>
+           </div>
+          </li>
+          <li class="btnDown">
+            <div>
+              <span class="material-symbols-outlined"> download </span>
+              <a href="https://firebasestorage.googleapis.com/v0/b/sqlitemaintainer.appspot.com/o/SQliteMaintainer.exe?alt=media&token=f68d7296-9cc3-4382-92fe-6e97b8adc02f"  target="_blank">Download for Free</a>
+            </div>
+          </li>
+        </ul>      
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="about">
+          <h1>A Visual toolbox for Developers and DBAs</h1>
+          <h3>
+            Provides a platform for quickly testing out commands and managing
+            SQLite databases. It supports common SQLite commands and query
+            languages. SQLite Maintainer can also be used for educational
+            purposes. Some of its key features are:
+          </h3>
+          <ul>
+            <li>
+              <div>
+                <img src="images/done.png" alt="" /> Performing <strong> <span> CRUD</span></strong>  operations
+                and executing other SQLite commands
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/done.png" alt="" />Keeping track of command
+                history
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/done.png" alt="" />Adding databases to a
+                project folder by a simple button click
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/done.png" alt="" />Could be used for
+                educational purposes
+              </div>
+            </li>
+            <li class="download-windows-list">
+              <div class="download-windows">
+                <span class="material-symbols-outlined"> download </span>
+                <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/sqlitemaintainer.appspot.com/o/SQliteMaintainer.exe?alt=media&token=f68d7296-9cc3-4382-92fe-6e97b8adc02f">Download for Windows</a>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="image">
+          
+          <div class="player" id="player-env" >
+            <video loop src="images/description-video.webm" id="myVideo" ></video>
+            <div id="play-video-icon" class="play-button" onclick="playVid()" >
+              <img  class="play-icon" id="play-video" src="images/play-fill.svg" ></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+  <script src="index.js"></script>
+ 
+</html>
+

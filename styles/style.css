@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +22,7 @@
 body {
   position: relative;
   background-color: white;
-  font-family: "Poppins", Courier, monospace;
+  font-family: "Lato", Courier, monospace;
   margin-bottom: 40px;
 }
 
@@ -40,7 +40,7 @@ nav .container {
 nav .container h3 {
   font-size: 37px;
   color: var(--lighter-orange);
-  font-family: "Poppins", Courier, monospace;
+  font-family: "Lato", Courier, monospace;
 }
 
 nav .container .links ul li {
@@ -94,10 +94,9 @@ section .container .image video {
 }
 
 section .container .about h1 {
-  text-align: left;
   color: var(--dark-purple);
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 30px;
 }
 
@@ -210,7 +209,11 @@ nav .container .links ul li div a,
 }
 .download-windows a {
   font-size: 15px;
-  font-family: "Poppins", Courier, monospace;
+  font-family: "Lato", Courier, monospace;
+}
+
+.download-windows-list {
+  margin-top: 30px;
 }
 
 .menu-class {
@@ -240,6 +243,9 @@ nav .container .links ul li div a,
   section .container {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
+  }
+  section .container {
+    text-align: center;
   }
   .download-windows {
     margin: 0 auto;

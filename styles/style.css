@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,8 +22,8 @@
 
 body {
   position: relative;
-  background-color: white;
-  font-family: "Lato", Courier, monospace;
+  background-color: #ececec;
+  font-family: "Ubuntu", Courier, monospace;
   margin-bottom: 40px;
 }
 
@@ -34,13 +35,16 @@ nav .container {
   padding-bottom: 40px;
   justify-content: space-between;
   align-items: center;
-  color: var(--white);
+  color: var(--dark-purple);
 }
 
 nav .container h3 {
-  font-size: 37px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: var(--lighter-purple);
   color: var(--lighter-orange);
-  font-family: "Lato", Courier, monospace;
+  padding: 10px;
+  font-family: "Ubuntu", Courier, monospace;
 }
 
 nav .container .links ul li {
@@ -57,14 +61,20 @@ nav .container .links ul li:nth-last-of-type(1) {
   box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.2);
   color: var(--dark-purple);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .app-icon {
   display: flex;
   align-items: center;
+  background-color: var(--lighter-purple);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .maintainer-span {
-  color: var(--light-purple);
+  color: var(--grayish-white);
 }
 section .container {
   margin-top: 30px;
@@ -97,15 +107,15 @@ section .container .about h1 {
   color: var(--dark-purple);
   margin-bottom: 20px;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
 section .container .about h3 {
   margin-bottom: 14px;
   color: var(--dark-green);
   font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
 }
 
 section .container .about ul {
@@ -209,7 +219,7 @@ nav .container .links ul li div a,
 }
 .download-windows a {
   font-size: 15px;
-  font-family: "Lato", Courier, monospace;
+  font-family: "Inter", Courier, monospace;
 }
 
 .download-windows-list {
@@ -307,4 +317,12 @@ nav .container .links ul li div a,
   .links {
     display: none;
   }
+}
+.links ul {
+  font-size: 16px;
+}
+
+.about h3 {
+  font-weight: 400;
+  line-height: 1.7;
 }

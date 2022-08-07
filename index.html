@@ -112,9 +112,12 @@
         <div class="image">
           
           <div class="player" id="player-env" >
-            <video loop src="https://vimeo.com/737119346/bd0d4e5159" id="myVideo" ></video>
-            <div id="play-video-icon" class="play-button" onclick="playVid()" >
-              <img  class="play-icon" id="play-video" src="images/play-fill.svg" ></img>
+            <div class="video-container" style="padding:59.8% 0 0 0;position:relative;">
+              <iframe id="myVideo" src="https://player.vimeo.com/video/737119346?h=bd0d4e5159&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              </iframe>
+            </div>            
+            <div  id="play-video-icon" class="play-button" onclick="playVid()" >
+              <img style="display: none;" class="play-icon" id="play-video" src="images/play-fill.svg" ></img>
             </div>
           </div>
         </div>
@@ -123,6 +126,8 @@
     <footer></footer>
   </body>
   <script src="index.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
  
 </html>
+
 

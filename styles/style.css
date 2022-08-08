@@ -125,7 +125,6 @@ section .container .about h3 {
   color: #046e40;
   font-size: 16px;
   margin-bottom: 30px;
-
   font-family: "Inter", Courier, monospace;
 }
 
@@ -255,11 +254,11 @@ nav .container .links ul li div a,
     display: none;
   }
 
-  .links {
-    display: block;
-  }
   .menu-class {
     display: none;
+  }
+  .links {
+    display: block;
   }
 }
 
@@ -268,9 +267,7 @@ nav .container .links ul li div a,
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
   }
-  section .container {
-    text-align: center;
-  }
+
   .download-windows {
     margin: 0 auto;
   }
@@ -338,9 +335,6 @@ nav .container .links ul li div a,
     padding-left: 6px;
     padding-right: 6px;
   }
-  .about h3 {
-    text-align: justify;
-  }
 }
 .links ul {
   font-size: 16px;
@@ -354,6 +348,12 @@ nav .container .links ul li div a,
 .hamburger {
   position: absolute;
   left: 0;
+  top: 3px;
   height: 40px;
   width: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20%;
+}
+.links {
+  display: block;
 }

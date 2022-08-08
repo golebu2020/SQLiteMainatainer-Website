@@ -27,15 +27,22 @@ body {
   margin-bottom: 40px;
 }
 
+body .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 nav .container {
   display: flex;
-  padding-left: 70px;
-  padding-right: 70px;
   padding-top: 20px;
   padding-bottom: 40px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  gap: 300px;
   color: var(--dark-purple);
+  position: relative;
 }
 
 nav .container h3 {
@@ -57,7 +64,8 @@ nav .container .links ul li {
 nav .container .links ul li:nth-last-of-type(1) {
   background-color: var(--lighter-orange);
   padding: 14px 18px;
-  border-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.2);
   color: var(--dark-purple);
   font-weight: bold;
@@ -66,12 +74,12 @@ nav .container .links ul li:nth-last-of-type(1) {
 
 .app-icon {
   display: flex;
-  align-items: center;
   background-color: var(--lighter-purple);
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  justify-self: flex-start;
 }
 .maintainer-span {
   color: var(--grayish-white);
@@ -84,18 +92,18 @@ section .container {
   justify-content: center;
   align-content: center;
   padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   gap: 50px;
 }
 
 section .container .about {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 section .container .image .player .video-container #myVideo {
   /* background-color: white; */
   border-radius: 10px;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.08);
   box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.3);
 }
 section .container .image video {
@@ -105,7 +113,7 @@ section .container .image video {
 
 section .container .about h1 {
   color: var(--dark-purple);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: bolder;
   font-size: 40px;
   line-height: 1;
@@ -114,21 +122,25 @@ section .container .about h1 {
 
 section .container .about h3 {
   margin-bottom: 14px;
-  color: var(--dark-green);
+  color: #046e40;
   font-size: 16px;
+  margin-bottom: 30px;
+
+  font-family: "Inter", Courier, monospace;
 }
 
 section .container .about ul {
-  font-size: 10px;
+  font-size: 16px;
   line-height: 2;
   color: var(--light-purple);
+  font-family: "Inter", Courier, monospace;
   list-style-type: none;
   font-weight: 600;
   align-items: center;
 }
 section .container .about ul li {
   text-align: start;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 5px;
   align-items: center;
 }
@@ -200,11 +212,13 @@ nav .container .links ul li div a,
   font-size: 16px;
 }
 
-.btnDown div,
 .download-windows {
   background-color: var(--lighter-orange);
   padding: 1px 2px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.2);
 }
 
 .download-windows {
@@ -215,10 +229,10 @@ nav .container .links ul li div a,
   text-align: center;
   width: 230px;
   height: 60px;
-  box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.2);
+  /* box-shadow: 2px 3px 5px rgb(0, 0, 0, 0.2); */
 }
 .download-windows a {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Inter", Courier, monospace;
 }
 
@@ -273,7 +287,7 @@ nav .container .links ul li div a,
   }
   .links {
     width: 300px;
-    height: 100%;
+    height: 1200px;
     z-index: 3;
   }
   .links ul {
@@ -306,7 +320,10 @@ nav .container .links ul li div a,
     width: 80%;
   }
   .menu-class {
-    margin-left: 50px;
+    margin-left: 80px;
+    margin-top: -30px;
+    height: 40px;
+    width: 40px;
   }
   .menu-class {
     display: block;
@@ -317,6 +334,13 @@ nav .container .links ul li div a,
   .links {
     display: none;
   }
+  body .container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .about h3 {
+    text-align: justify;
+  }
 }
 .links ul {
   font-size: 16px;
@@ -324,5 +348,12 @@ nav .container .links ul li div a,
 
 .about h3 {
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 2;
+}
+
+.hamburger {
+  position: absolute;
+  left: 0;
+  height: 40px;
+  width: 40px;
 }
